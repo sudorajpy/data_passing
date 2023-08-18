@@ -101,19 +101,19 @@ class _InputScreenState extends State<InputScreen> {
             // day switch
             for (String day in availableDays)
               Container(
-                padding: EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Row(
                   children: <Widget>[
                     Text(
                       day,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 18,
                         fontFamily: 'Montserrat',
                         color: Color(0xff424242),
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     FlutterSwitch(
                       width: 55,
                       height: 30,
@@ -134,9 +134,7 @@ class _InputScreenState extends State<InputScreen> {
               width: double.infinity,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  elevation: 0,
-                  primary: const Color(0XFF54606D),
-                  onPrimary: Colors.white,
+                  foregroundColor: Colors.white, backgroundColor: const Color(0XFF54606D), elevation: 0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0)),
                   minimumSize: const Size(100, 40),

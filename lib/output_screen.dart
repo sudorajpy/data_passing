@@ -12,7 +12,7 @@ class OutputScreen extends StatelessWidget {
         title: const Text('Output Screen'),
       ),
       body: Center(
-        child: Text('${userData.availbilityDays.where((day) => !day.contains('All Days')).join(', ')}',),
+        child: Text(userData.availbilityDays.where((day) => !day.contains('All Days')).join(', '),),
       ),
     );
   }
